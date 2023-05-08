@@ -28,7 +28,7 @@ export function Sidenav({ isOpen = true }: { isOpen?: boolean }) {
     <aside
       className={` ${
         collapse ? "w-64 p-8" : "w-20 p-6"
-      } h-screen relative duration-300 shadow-md`}
+      } h-screen relative duration-300 shadow-md bg-white`}
     >
       <ChevronLeft
         className={`absolute cursor-pointer -right-3 top-9 w-7
