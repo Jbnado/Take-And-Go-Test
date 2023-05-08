@@ -1,21 +1,15 @@
 import { useQuery } from "@tanstack/react-query";
+import { useHistory } from "react-router-dom";
 import { Columns, Table } from "@/components";
 import { VehicleType, getVehicles } from "@/api";
 import { ArrowClockwise } from "react-bootstrap-icons";
+import { formatCurrency, formatMileage } from "@/utils";
 
 export function VehicleTable() {
-  const formatCurrency = (value: number) => {
-    return new Intl.NumberFormat("pt-BR", {
-      style: "currency",
-      currency: "BRL",
-    }).format(value);
-  };
+  const history = useHistory();
 
-  const formatMileage = (value: number) => {
-    return new Intl.NumberFormat("pt-BR", {
-      style: "unit",
-      unit: "kilometer",
-    }).format(value);
+  const handleRowClick = (id: string) => {
+    history.push(`/vehicle/${id}`);
   };
 
   const { data: vehicles, isLoading: isLoadingVehicles } = useQuery(
@@ -81,6 +75,7 @@ export function VehicleTable() {
       searchKey="model_name"
       columns={columns}
       dataSource={vehicles as VehicleType[]}
+      rowClick={handleRowClick}
     />
   );
 }

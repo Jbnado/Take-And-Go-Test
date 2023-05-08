@@ -14,6 +14,7 @@ interface TableProps<T> {
   dataSource: Array<T>;
   rowId?: keyof T;
   searchKey?: keyof T;
+  rowClick?: (id: string) => void;
 }
 
 export function Table<T>({
@@ -22,6 +23,7 @@ export function Table<T>({
   dataSource = [],
   rowId,
   searchKey,
+  rowClick,
 }: TableProps<T>) {
   const [data, setData] = useState([...dataSource]);
 
@@ -60,6 +62,9 @@ export function Table<T>({
                 <tr
                   key={rowId ? String(record[rowId]) : index}
                   className="hover:bg-gray-100 cursor-pointer"
+                  onClick={() =>
+                    rowClick && rowId && rowClick(String(record[rowId]))
+                  }
                 >
                   {columns.map(({ dataIndex, render }: Columns<T>) => {
                     return render ? (
