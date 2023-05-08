@@ -1,15 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
-import { useHistory } from "react-router-dom";
 import { Columns, Table } from "@/components";
 import { VehicleType, getVehicles } from "@/api";
 import { ArrowClockwise } from "react-bootstrap-icons";
 import { formatCurrency, formatMileage } from "@/utils";
 
 export function VehicleTable() {
-  const history = useHistory();
-
   const handleRowClick = (id: string) => {
-    history.push(`/vehicle/${id}`);
+    // history.push(`/vehicle/${id}`);
+    window.location.href = `/vehicle/${id}`;
   };
 
   const { data: vehicles, isLoading: isLoadingVehicles } = useQuery(
