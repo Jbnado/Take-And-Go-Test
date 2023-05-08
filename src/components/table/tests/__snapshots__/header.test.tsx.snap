@@ -1,0 +1,144 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TableHeader Component > renders correctly with search input 1`] = `
+<header
+  className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 h-50 mb-4"
+>
+  <div
+    className="flex gap-4 items-center"
+  >
+    <h1
+      className="text-2xl font-semibold"
+    >
+      Test Title
+    </h1>
+    <div
+      className="relative sm:block hidden"
+    >
+      <label
+        className="sr-only"
+        htmlFor="search"
+      />
+      <input
+        className="h-10 w-full rounded-full border-none bg-white pe-10 ps-4 text-sm shadow-sm sm:w-56"
+        id="search"
+        onKeyDown={[Function]}
+        placeholder="Buscar por veículo"
+        type="text"
+      />
+      <button
+        className="absolute end-1 top-1/2 -translate-y-1/2 rounded-full bg-gray-50 p-2 text-gray-600 transition hover:text-gray-700"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="sr-only"
+        >
+          Search
+        </span>
+        <svg
+          fill="currentColor"
+          height="1em"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div
+    className="flex gap-4 items-center"
+  >
+    <button
+      className="flex gap-2 items-center rounded border border-blue-600 bg-white sm:px-6 px-4 py-2 text-sm font-medium text-blue-600 hover:bg-blue-600 hover:text-white focus:outline-none focus:ring active:text-white"
+    >
+      <svg
+        fill="currentColor"
+        height={18}
+        viewBox="0 0 16 16"
+        width={18}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"
+          fillRule="evenodd"
+        />
+      </svg>
+      Filtrar
+    </button>
+    <button
+      className="flex gap-2 items-center rounded border border-blue-600 bg-blue-600 sm:px-6 px-4 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-600"
+    >
+      <svg
+        fill="currentColor"
+        height={20}
+        viewBox="0 0 16 16"
+        width={20}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+        />
+      </svg>
+      Adicionar
+    </button>
+  </div>
+</header>
+`;
+
+exports[`TableHeader Component > renders correctly with title 1`] = `
+<header
+  className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 h-50 mb-4"
+>
+  <div
+    className="flex gap-4 items-center"
+  >
+    <h1
+      className="text-2xl font-semibold"
+    >
+      Test Title
+    </h1>
+  </div>
+  <div
+    className="flex gap-4 items-center"
+  >
+    <button
+      className="flex gap-2 items-center rounded border border-blue-600 bg-white sm:px-6 px-4 py-2 text-sm font-medium text-blue-600 hover:bg-blue-600 hover:text-white focus:outline-none focus:ring active:text-white"
+    >
+      <svg
+        fill="currentColor"
+        height={18}
+        viewBox="0 0 16 16"
+        width={18}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z"
+          fillRule="evenodd"
+        />
+      </svg>
+      Filtrar
+    </button>
+    <button
+      className="flex gap-2 items-center rounded border border-blue-600 bg-blue-600 sm:px-6 px-4 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-600"
+    >
+      <svg
+        fill="currentColor"
+        height={20}
+        viewBox="0 0 16 16"
+        width={20}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+        />
+      </svg>
+      Adicionar
+    </button>
+  </div>
+</header>
+`;
